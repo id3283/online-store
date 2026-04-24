@@ -3,8 +3,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -57,11 +55,6 @@ public class Main {
     }
 
 
-    /**
-     * Load products from file
-     * @param fileName
-     * @return
-     */
     private static ArrayList<Product> loadProducts(String fileName) {
         ArrayList<Product> products = new ArrayList<Product>();
         FileReader fileReader = null;
@@ -145,7 +138,23 @@ public class Main {
     }
 
     private static void searchByPrice() {
-        // TODO: Implement method
+        System.out.println("What is the minimum price to search for: ");
+        String userInput = scanner.nextLine();
+        double minPrice = Double.parseDouble(userInput);
+
+        System.out.println("What is the maximum price to search for: ");
+        userInput = scanner.nextLine();
+        double maxPrice = Double.parseDouble(userInput);
+
+        for(Product p: products) {
+            double price = p.getPrice();
+
+            if( (price >= minPrice) && (price <= maxPrice) ) {
+                p.displayProduct();
+            }
+        }
+
+        System.out.println("\n\n");
     }
 
     private static void searchByDepartment() {
