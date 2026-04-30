@@ -35,7 +35,7 @@ For example:
     }
 ```
 
-I also think the ASCII art splash screen is pretty cool:
+I also think the ASCII art splash screen is pretty cool:  
 ![img.png](images/img.png)
 
 
@@ -43,7 +43,7 @@ I also think the ASCII art splash screen is pretty cool:
 I struggled a bit figuring out how to effectively use collections.  
 At one point, items would disappear from the cart like burried treasure 😅.  
 
-My instructor was a real jerk about helping me, and I admit, I cried and screamed a bit.  
+My instructor was useless, and I admit, I cried and screamed a bit.  
 
 Then I realized that I didn't have to use an index to access the items in the cart, and it was very satisfying to see it work.
 
