@@ -12,7 +12,24 @@ public class Main {
     static ArrayList<Product> products = loadProducts(PRODUCTS_FILE_NAME);
     static ArrayList<Product> cartItems = new ArrayList<>();
 
+    public static final String SPLASH = """
+                              ______
+                           .-"      "-.
+                          /            \\
+              _          |              |          _
+             ( \\         |,  .-.  .-.  ,|         / )
+              > "=._     | )(__/  \\__)( |     _.=" <
+             (_/"=._"=._ |/     /\\     \\| _.="_.="\\_)
+                    "=._ (_     ^^     _)"_.="
+                        "=\\__|IIIIII|__/="
+                       _.="| \\IIIIII/ |"=._
+             _     _.="_.="\\          /"=._"=._     _
+            ( \\_.="_.="     `--------`     "=._"=._/ )
+             > _.="                            "=._ <
+            (_/       Pirate's Cove Store App      \\_)\n""";
+
     public static void main(String[] args) {
+        System.out.println(SPLASH);
         mainMenu();
         System.out.println("Thanks for using my app.  Bye!!");
     }
@@ -53,7 +70,6 @@ public class Main {
             p.displayProduct();
         }
     }
-
 
     private static ArrayList<Product> loadProducts(String fileName) {
         ArrayList<Product> products = new ArrayList<Product>();
@@ -100,10 +116,11 @@ public class Main {
     private static void productsMenu() {
         String prompt = """
                     Products Menu
-                1. Search by product name
-                2. Search by department
-                3. Search by price
-                4. Add product to shopping cart
+                1. Show all products
+                2. Search by product name
+                3. Search by department
+                4. Search by price
+                5. Add product to shopping cart
                 X. Exit to Main Menu
                 
                 Select one of the options above:
@@ -117,16 +134,18 @@ public class Main {
 
             switch (userInput) {
                 case "1":
-//                    searchByName();
-                    methodNotYetWritten();
+                    displayAllProducts();
                     break;
                 case "2":
-                    searchByDepartment();
+                    searchByName();
                     break;
                 case "3":
-                    searchByPrice();
+                    searchByDepartment();
                     break;
                 case "4":
+                    searchByPrice();
+                    break;
+                case "5":
                     addToCart();
                     break;
                 case "X":
