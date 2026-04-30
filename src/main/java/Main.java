@@ -110,14 +110,15 @@ public class Main {
                 """;
         boolean running = true;
         do {
-            displayAllProducts();
+//            displayAllProducts();
 
             System.out.print(prompt);
             String userInput = scanner.nextLine();
 
             switch (userInput) {
                 case "1":
-                    searchByName();
+//                    searchByName();
+                    methodNotYetWritten();
                     break;
                 case "2":
                     searchByDepartment();
@@ -135,6 +136,11 @@ public class Main {
                     System.err.println("Invalid input.  Please try again.");
             }
         } while (running);
+    }
+
+    private static void methodNotYetWritten() {
+        // TODO: implement this method
+        System.out.println("This doesn't do anything yet");
     }
 
     private static void searchByPrice() {
