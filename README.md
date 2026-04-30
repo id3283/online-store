@@ -1,4 +1,4 @@
-# Pirate's Cove Store App
+# 🏴‍☠️Pirate's Cove Store App🏴‍☠️
 
 ## Description
 This is a simple CLI app to demonstrate techniques for constructing
@@ -42,9 +42,13 @@ I also think the ASCII art splash screen is pretty cool:
 ## My Personal Challenges
 I struggled a bit figuring out how to effectively use collections.  
 At one point, items would disappear from the cart like burried treasure 😅.  
+
 My instructor was a real jerk about helping me, and I admit, I cried and screamed a bit.  
+
 Then I realized that I didn't have to use an index to access the items in the cart, and it was very satisfying to see it work.
 
+I was a little shaky on collections when I started this, but I feel like I've gotten a lot better at them now.
+
 ## Next Time...
-I also learned that I should think through the project a bit more before I start coding, and that I should do the code in "baby steps".
+I also learned that I need to think through the project a bit more before I start coding, and that I should do the code in "baby steps".
 I'm going to try to do that next time.
